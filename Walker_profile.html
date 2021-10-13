@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walker's Profile</title>
+
+    <style>
+        body
+        {
+            background-image: url(Circuit.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:darkorchid; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">Walker Stedman</h1>
+    <h3 style="color: darkorchid; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">20 year old Junior at Bradley University</h3>
+    <br>
+    <h2 style="color: darkorchid; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><u>Hobbies</u></h2>
+    <ul>
+        <li style="color: darkorchid; font-family: 'Times New Roman', Times, serif;"> <b>Computer Building</b></li>
+        <li style="color: darkorchid; font-family: 'Times New Roman', Times, serif;"> <b>Weight Lifting</b></li>
+        <li style="color: darkorchid; font-family: 'Times New Roman', Times, serif;"> <b>Gaming</b></li>
+        <li style="color: darkorchid; font-family: 'Times New Roman', Times, serif;"> <b>Work (less fun)</b></li>
+    </ul>
+    <br>
+    <h3 style="color: darkorchid; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><u>Where I Work</u></h3>
+    <a href="https://www.panerabread.com/en-us/home.html" target="_blank">
+        <img src="Panera.png" alt="Panera Logo" style="width: 200px; height: 200px;">
+    </a>
+    <br>
+    <h3 style="color: darkorchid; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><u>Pick a Hobby we can relate to!</u></h3>
+
+    <input type="text" placeholder="Enter a Hobby..." id="hobbyInput">
+    <button type="button" onclick="getHobby()">Click to finalize</button>
+
+    <script>
+        function getHobby()
+        {
+            var hobby = document.getElementById("hobbyInput").value;
+            alert("We both like: " + hobby);
+        }
+    </script>
+</body>
+</html>
